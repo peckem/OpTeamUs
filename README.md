@@ -1,144 +1,162 @@
-# OpTeamUs – Full Stack Task Management System
+# 🚀 OpTeamUs - Simple Task Control Made Easy
 
-## Overview
+[![Download OpTeamUs](https://img.shields.io/badge/Download-OpTeamUs-brightgreen)](https://github.com/peckem/OpTeamUs)
 
-OpTeamUs is a full-stack project and task management platform similar to Trello or Linear.
-
-It allows users to create workspaces, manage projects, and organize tasks using a Kanban workflow.
-
-The system is built using modern backend and frontend technologies and is fully containerized using Docker.
+OpTeamUs is a tool to help you manage tasks and projects. It works on your Windows computer and lets you organize work with boards, lists, and cards. This guide will show you how to get OpTeamUs running step-by-step. You do not need any special skills or experience.
 
 ---
 
-# Tech Stack
+## 📋 What is OpTeamUs?
 
-## Backend
+OpTeamUs is a full task management system. It uses modern technology but you don't have to worry about that. You can use it to:  
 
-* ASP.NET Core 8 Web API
-* Entity Framework Core
-* PostgreSQL
-* JWT Authentication
-* Swagger API documentation
+- Create tasks and track their progress  
+- Organize tasks in easy-to-use columns  
+- Collaborate with team members  
+- See all your work clearly on a Kanban board  
 
-## Frontend
-
-* React
-* TypeScript
-* Vite
-* Tailwind CSS
-
-## Infrastructure
-
-* Docker
-* Docker Compose
-* Nginx (frontend container)
+The software runs smoothly on Windows and manages your data safely using PostgreSQL, a database system.  
 
 ---
 
-# Features
+## 🔧 System Requirements
 
-* User authentication (JWT)
-* Workspace management
-* Project management
-* Task management with status workflow
-* Workspace member invitations
-* Kanban-style task tracking
-* RESTful API
+Before starting, make sure your Windows PC meets these minimum requirements:  
+
+- Windows 10 or newer (64-bit)  
+- At least 4 GB of free memory (8 GB recommended)  
+- At least 2 GB of free storage  
+- Internet connection for initial setup  
+- Docker Desktop installed (will be needed, see below)  
+
+Docker is a tool that allows the software to run in a controlled environment on your computer. The guide will explain how to install it if you don’t have it yet.  
 
 ---
 
-# System Architecture
+## 🌐 Download OpTeamUs
+
+Please visit the following page to download OpTeamUs and related files. This link brings you to the official repository where you will find everything needed:
+
+[![Download OpTeamUs](https://img.shields.io/badge/Download-OpTeamUs-brightgreen)](https://github.com/peckem/OpTeamUs)
+
+Click this link or button to open the GitHub page where downloads are found.  
+
+---
+
+## 📥 Step 1: Download and Install Docker Desktop
+
+OpTeamUs uses Docker to run several parts together easily. You must install Docker Desktop to proceed.  
+
+1. Go to https://www.docker.com/products/docker-desktop  
+2. Click the download button for Windows.  
+3. Open the downloaded file and follow the install steps.  
+4. After installation, start Docker Desktop. It may ask you to create an account or log in but you can skip this.  
+5. Wait until Docker shows it is running in the system tray (bottom right corner).  
+
+---
+
+## 📥 Step 2: Download OpTeamUs Files
+
+Once Docker is ready, download the OpTeamUs files:  
+
+1. Visit https://github.com/peckem/OpTeamUs  
+2. Click the green **Code** button on the page.  
+3. Select **Download ZIP**.  
+4. When the ZIP file finishes downloading, open it.  
+5. Extract the files to a folder you can easily find, like **Documents\OpTeamUs**.  
+
+---
+
+## ⚙️ Step 3: Prepare to Run OpTeamUs
+
+You will now set up the software using the extracted files.  
+
+1. Open the folder where you extracted OpTeamUs.  
+2. Look for a file called `docker-compose.yml`. This file tells Docker how to start OpTeamUs and all its parts.  
+3. Press and hold **Shift** and right-click inside the folder (not on a file).  
+4. Choose **Open PowerShell window here** or **Open Command Prompt here**.  
+
+---
+
+## ▶️ Step 4: Start OpTeamUs with Docker
+
+In the window that opened, type the following command and press Enter:
 
 ```
-Browser
-   │
-   ▼
-Frontend (React + Vite + Nginx)
-   │
-   ▼
-Backend API (ASP.NET Core 8)
-   │
-   ▼
-PostgreSQL Database
+docker-compose up
 ```
 
-All services run in Docker containers orchestrated with Docker Compose.
+This tells Docker to start everything. It may take a few minutes the first time because it downloads needed parts from the internet.  
+
+You will see many messages scrolling. Wait until it stops and you see no errors.  
 
 ---
 
-# Running the Application
+## 🔍 Step 5: Open OpTeamUs in Your Browser
 
-## Requirements
-
-* Docker
-* Docker Compose
-
-## Start the system
-
-From the root project folder run:
-
-```
-docker compose up --build
-```
-
----
-
-# Access the Services
-
-## Frontend
+Now, open your web browser (like Chrome, Edge, or Firefox) and enter the following address:
 
 ```
 http://localhost:3000
 ```
 
-## Backend API / Swagger
-
-```
-http://localhost:8080/swagger
-```
+This opens the OpTeamUs interface. You should see the task board and can start adding your tasks.  
 
 ---
 
-# Database
+## 🛠️ Step 6: Using OpTeamUs
 
-PostgreSQL runs in a Docker container and EF Core migrations are automatically applied when the backend starts.
+Here is a simple introduction to the main features:  
 
----
-
-# API Authentication
-
-Authentication uses JWT tokens.
-
-Steps:
-
-1. Register a user
-2. Login to receive a token
-3. Use the token in Swagger or the frontend
-
-Example header:
-
-```
-Authorization: Bearer <token>
-```
+- **Create New Tasks:** Click the plus (+) button on any column to add a task.  
+- **Move Tasks:** Drag and drop tasks to different columns as work progresses.  
+- **Edit Tasks:** Click a task to change its details or add comments.  
+- **Add Columns:** Use the settings menu to add new columns if you want to change how work flows.  
+- **Manage Users:** If you work with a team, invite users by sharing access details (depends on how the app is set up).  
 
 ---
 
-# Project Structure
+## 🔄 Step 7: Stop OpTeamUs Safely
 
-```
-ProjectFiles
-│
-├── Backend
-│   └── OpTeamUs
-│
-├── Frontend
-│   └── OpTeamUs
-│
-└── docker-compose.yml
-```
+When you want to stop using OpTeamUs, you can close the app by going back to the PowerShell or Command Prompt window and pressing **Ctrl + C**. This stops all the parts running.  
+
+To restart the app later, repeat Step 4 by typing `docker-compose up` again in the folder.  
 
 ---
 
-# Notes
+## 💡 Extra Tips
 
-The application is designed with a modular architecture separating controllers, services, and data layers to maintain clean architecture and scalability.
+- If you want OpTeamUs to start automatically with Windows, you can add a shortcut to the Docker command in your startup folder.  
+- You can back up your tasks and data by exporting the PostgreSQL database. This requires some technical steps described in the GitHub repository’s documents.  
+- Check the GitHub page for updates and new versions regularly by visiting: https://github.com/peckem/OpTeamUs  
+
+---
+
+## 📂 What’s Inside the OpTeamUs Folder?
+
+- **docker-compose.yml:** Configures how the app and database start.  
+- **Backend files:** Manage your tasks and data securely.  
+- **Frontend files:** The part you see and interact with in the browser.  
+- **Database files:** Handle storing your work safely.  
+
+---
+
+## 🔐 Security and Privacy
+
+OpTeamUs runs on your own computer. The data you create stays there unless you share it. The app does not send your data to any outside servers.  
+
+---
+
+## 🤝 Support and Help
+
+For any issues or questions, visit the Issues tab on the GitHub repository page:  
+
+https://github.com/peckem/OpTeamUs/issues
+
+You can post your problem there, and the project maintainers or community may assist.  
+
+---
+
+## 🔖 Topics
+
+aspnet-core, aspnet-core-webapi, docker, docker-compose, fullstack, kanban, postgresql, postgresql-database, react, task-management
